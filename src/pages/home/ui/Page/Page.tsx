@@ -1,3 +1,9 @@
+import { PageContainer } from "@shared/ui";
+
 export const HomePage = () => {
-  return <></>;
+  return (
+    <>
+      <PageContainer>a</PageContainer>
+    </>
+  );
 };

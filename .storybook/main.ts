@@ -5,6 +5,7 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     "../src/shared/ui/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/**/**/ui/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
     "@storybook/addon-onboarding",
@@ -16,6 +17,9 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook/react-vite",
     options: {},
+  },
+  viteFinal: (config) => {
+    return config;
   },
 };
 export default config;
